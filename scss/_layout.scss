@@ -1,0 +1,40 @@
+.l-container {
+	@include container;
+	background-color: #e9eae2;
+}
+
+.l-row {
+	max-width:100%;
+	display:flex;
+	max-height:100%;
+}
+
+.l-column-big {
+	@include column($big-column-width);
+}
+
+.l-column-small {
+	@include column($small-column-width);
+}
+
+.l-column-45 {
+	@include column(45%);
+	display:inline-block;
+}
+
+.l-column-55 {
+	@include column(55%);
+	display:inline-block;
+}
+
+.l-column-29 {
+	@include column(29%);
+}
+
+.l-column-71 {
+	@include column(71%);
+}
+
+.l-column-50 {
+	@include column(50%);
+}

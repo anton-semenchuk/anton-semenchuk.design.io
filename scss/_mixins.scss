@@ -1,0 +1,48 @@
+@mixin container {
+	width:$width-layout;
+	max-width:100%;
+	margin:0 auto;
+}
+
+@mixin column($c-width) {
+	width:$c-width;
+	
+}
+
+@mixin font($weight, $size, $color, $height) {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight:$weight;
+	font-size:$size;
+	color:$color;
+	line-height: $height;
+}
+
+@mixin diagonal-line($left, $h, $top) {
+	content:'';
+	width:1px;
+	height:$h;
+	background-color:#fff;
+	position:absolute;
+	top:$top;
+	left:$left;
+	transform: rotate(43deg);
+}
+
+@mixin navigation-block($color, $h:500px, $line:230px, $line-height:680px, $line-top:-90px) {
+	background:$color;
+	height:$h;
+	position:relative;
+	&::before {
+		@include diagonal-line($line, $line-height, $line-top);
+	}
+}
+
+@mixin project-wrap($pl: 100px, $pt:85px, $h:330px, $wrap:nowrap, $fldir:column, $jc:space-between) {
+	padding-left:$pl;
+	padding-top:$pt;
+	height:$h;
+	display: flex;
+	flex-direction: $fldir;
+	justify-content: $jc;
+	flex-wrap:$wrap;
+}

@@ -1,0 +1,190 @@
+.projects-navigation {
+	@include navigation-block(#ebb240);
+	&__wrap {
+		padding:170px 0  0 166px;
+	}
+	&__title {
+		@include font(normal, 48px, #fff, 14px);
+		margin:0;
+		text-transform:uppercase;
+		padding:55px 0 0 50px;
+	}
+}
+
+.projects-menu {
+		list-style:none;
+		@include font(normal, 13px, #fff, 14px);
+		text-transform:uppercase;
+		&__link {
+			text-decoration: none;
+			color:#fff;
+		}
+		&__link:hover {
+			color:black;
+			position:relative;
+			&::before {
+				content:'';
+				position:absolute;
+				left:-35px;
+				@extend .sprite, .sprite-arrow-white;
+			}
+		}
+	}
+
+.project-fondue {
+	background:url(../images/fondue.jpg) no-repeat;
+	height:100%;
+}
+
+.project-fondue__wrap {
+	@include project-wrap();
+}
+
+.projects-title {
+	text-transform: uppercase;
+	@include font(300, 24px, #333, 14px);
+	&_bright {
+		color:$bright-color;
+	}
+}
+
+.projects-describe {
+	margin-top:15px;
+	@include font(300, 12px, #333, 12px);
+	&__element {
+		text-transform: uppercase;
+		list-style: none;
+		&_lower-case {
+			text-transform:none;
+		}
+	}
+	&__strong {
+		font-weight:bold;
+	}
+		&_bright {
+		color:$bright-color;
+	}
+}
+
+.view-project {
+	display: flex;
+	&__link {
+		text-decoration: none;
+		text-transform: uppercase;
+		@include font(300, 18px, #333, 12px);
+		&_bright {
+			color:$bright-color;
+		}
+	}
+	&_margin-left {
+		margin-left:-30px;
+	}
+}
+
+.project-like {
+	margin-left:70px;
+	&__amount {
+		@include font(300, 11px, #ff0000, 12px);
+		&_light {
+			color:#fe7c7c;
+		}
+	}
+	&_no-margin {
+		margin-left:0;
+	}
+	&_margin-left {
+		margin-left:40px;
+	}
+}
+
+.project-louis {
+	min-height:464px;
+	background:url(../images/louis.jpg) no-repeat;
+}
+
+.project-louis__wrap {
+	@include project-wrap(30px, 45px, 210px);
+}
+
+.project-p22 {
+	min-height:464px;
+	background:url(../images/p22.jpg) no-repeat;
+}
+
+.project-p22__wrap {
+	@include project-wrap(360px, 90px, 90px, wrap);
+}
+
+.project-sesann {
+	min-height:300px;
+	background:url(../images/sesann.jpg) no-repeat;
+}
+
+.project-sesann__wrap {
+	@include project-wrap(150px, 200px, 80px, nowrap, row);
+	width:430px;
+	align-items:center;
+}
+
+.project-alessi {
+	min-height:300px;
+	background:url(../images/alessi.jpg) no-repeat;
+}
+
+.project-alessi__wrap {
+	@include project-wrap(150px, 80px, 186px);
+}
+
+.project-potter {
+	min-height:250px;
+	background:url(../images/potter.jpg) no-repeat;
+}
+
+.project-potter__wrap {
+	@include project-wrap(40px, 36px, 186px);
+	width:155px;
+}
+
+.project-tabano {
+	min-height:462px;
+	background:url(../images/tabano.jpg) no-repeat;
+}
+
+.project-tabano__wrap {
+	@include project-wrap(60px, 340px, 80px, nowrap, row);
+	align-items:center;
+	width:360px;
+}
+
+.project-fiji {
+	min-height:252px;
+	background:url(../images/fiji.jpg) no-repeat;
+}
+
+.project-fiji__wrap {
+	@include project-wrap(246px, 52px, 174px);
+}
+
+.projects-timeline {
+	@include navigation-block(#ebb240, 300px, 140px, 410px, -55px);
+	&__wrap {
+		padding:60px 0  0 100px;
+	}
+	&__title {
+		margin-bottom:7px;
+		text-transform: uppercase;
+		@include font(normal, 14px, #333, 14px);
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   .projects-describe, .projects-menu {
+	   padding: 0;
+	}
+}
+
+@-moz-document url-prefix() {
+	.projects-describe, .projects-menu {
+		padding: 0;
+	}
+}
