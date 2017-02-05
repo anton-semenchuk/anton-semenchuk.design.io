@@ -1,0 +1,101 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow-person {
+    width: 19px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+
+.sprite-arrow-white {
+    width: 19px;
+    height: 15px;
+    background-position: -34px -5px;
+}
+
+.sprite-arrow-yellow {
+    width: 19px;
+    height: 15px;
+    background-position: -63px -5px;
+}
+
+.sprite-cv-icon {
+    width: 15px;
+    height: 12px;
+    background-position: -92px -5px;
+}
+
+.sprite-facebook-icon {
+    width: 10px;
+    height: 22px;
+    background-position: -92px -27px;
+}
+
+.sprite-facebook-person-icon {
+    width: 6px;
+    height: 13px;
+    background-position: -117px -5px;
+}
+
+.sprite-google-icon {
+    width: 19px;
+    height: 19px;
+    background-position: -5px -59px;
+}
+
+.sprite-google-person-icon {
+    width: 14px;
+    height: 13px;
+    background-position: -34px -59px;
+}
+
+.sprite-hamburger-icon {
+    width: 40px;
+    height: 17px;
+    background-position: -58px -59px;
+}
+
+.sprite-heart-icon {
+    width: 24px;
+    height: 21px;
+    background-position: -34px -86px;
+}
+
+.sprite-linkedin-icon {
+    width: 24px;
+    height: 23px;
+    background-position: -68px -86px;
+}
+
+.sprite-linkedin-person-icon {
+    width: 13px;
+    height: 12px;
+    background-position: -108px -59px;
+}
+
+.sprite-pin-1 {
+    width: 45px;
+    height: 60px;
+    background-position: -133px -5px;
+}
+
+.sprite-twitter-icon {
+    width: 26px;
+    height: 21px;
+    background-position: -131px -75px;
+}
+
+.sprite-twitter-person-icon {
+    width: 13px;
+    height: 10px;
+    background-position: -5px -106px;
+}
+
+.sprite-x-icon {
+    width: 30px;
+    height: 33px;
+    background-position: -102px -106px;
+}
